@@ -26,6 +26,27 @@ scene("game", () => {
       spaceship.moveTo(spaceship.pos.x, spaceship.pos.y + 10);
     }
   });
+
+  spaceship.onKeyPress("space", () => {
+    const bullet = add([
+      sprite("bullet"),
+      pos(
+        spaceship.pos.x + spaceship.width,
+        spaceship.pos.y + spaceship.height / 2 - 5
+      ),
+      area(),
+      offscreen(),
+      "bullet",
+    ]);
+
+    bullet.onUpdate(() => {
+      bullet.moveTo(bullet.pos.x + 5, bullet.pos.y);
+    });
+
+    bullet.onExitScreen(() => {
+      destroy(bullet);
+    });
+  });
 });
 
 go("game");
