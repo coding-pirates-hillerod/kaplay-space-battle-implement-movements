@@ -9,6 +9,7 @@ kaplay({
 loadSprite("spacebg", "graphics/spacebg.png");
 loadSprite("spaceship", "graphics/spaceship.png");
 loadSprite("bullet", "graphics/bullet.png");
+loadSprite("bean", "sprites/bean.png");
 
 scene("game", () => {
   add([sprite("spacebg"), pos(0, 0)]);
@@ -40,13 +41,44 @@ scene("game", () => {
     ]);
 
     bullet.onUpdate(() => {
-      bullet.moveTo(bullet.pos.x + 5, bullet.pos.y);
+      // bullet.moveTo(bullet.pos.x + 5, bullet.pos.y);
+      bullet.move(300, 0);
     });
 
     bullet.onExitScreen(() => {
       destroy(bullet);
     });
   });
+
+  const spawnEnemies = () => {
+    const randY = rand(0, height() - 50);
+    const enemy = add([
+      sprite("bean"),
+      pos(width(), randY),
+      area(),
+      offscreen(),
+      "enemy",
+    ]);
+
+    enemy.onUpdate(() => {
+      enemy.move(-200, 0);
+    });
+
+    enemy.onCollide("bullet", (bullet) => {
+      destroy(enemy);
+      destroy(bullet);
+    });
+
+    enemy.onExitScreen(() => {
+      if (enemy.pos.x < 0) {
+        destroy(enemy);
+      }
+    });
+
+    const waitTime = rand(0.5, 1.5);
+    wait(waitTime, spawnEnemies);
+  };
+  spawnEnemies();
 });
 
 go("game");
