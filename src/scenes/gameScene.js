@@ -41,6 +41,7 @@ export const gameScene = () => {
   spaceship.onCollide("enemy", (enemy) => {
     destroy(spaceship);
     destroy(enemy);
+    go("gameover");
   });
 
   const spawnEnemies = () => {

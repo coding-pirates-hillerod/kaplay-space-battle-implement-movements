@@ -3,6 +3,7 @@ import "kaplay/global";
 
 import { mainMenuScene } from "./scenes/mainMenuScene";
 import { gameScene } from "./scenes/gameScene";
+import { gameOverScene } from "./scenes/gameOverScene";
 
 kaplay({
   debug: true,
@@ -19,5 +20,6 @@ loadSound("explosion", "sounds/explosion.wav");
 
 scene("main-menu", mainMenuScene);
 scene("game", gameScene);
+scene("gameover", gameOverScene);
 
 go("main-menu");
