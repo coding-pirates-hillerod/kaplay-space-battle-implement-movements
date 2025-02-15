@@ -11,10 +11,13 @@ loadSprite("spaceship", "graphics/spaceship.png");
 loadSprite("bullet", "graphics/bullet.png");
 loadSprite("bean", "sprites/bean.png");
 
+loadSound("laser", "sounds/laser.wav");
+loadSound("explosion", "sounds/explosion.wav");
+
 scene("game", () => {
   add([sprite("spacebg"), pos(0, 0)]);
 
-  const spaceship = add([sprite("spaceship"), pos(10, center().y)]);
+  const spaceship = add([sprite("spaceship"), pos(10, center().y), area()]);
 
   spaceship.onKeyDown("up", () => {
     if (spaceship.pos.y >= 0) {
@@ -29,6 +32,8 @@ scene("game", () => {
   });
 
   spaceship.onKeyPress("space", () => {
+    play("laser", { volume: 0.3 });
+
     const bullet = add([
       sprite("bullet"),
       pos(
@@ -41,13 +46,17 @@ scene("game", () => {
     ]);
 
     bullet.onUpdate(() => {
-      // bullet.moveTo(bullet.pos.x + 5, bullet.pos.y);
       bullet.move(300, 0);
     });
 
     bullet.onExitScreen(() => {
       destroy(bullet);
     });
+  });
+
+  spaceship.onCollide("enemy", (enemy) => {
+    destroy(spaceship);
+    destroy(enemy);
   });
 
   const spawnEnemies = () => {
@@ -65,6 +74,7 @@ scene("game", () => {
     });
 
     enemy.onCollide("bullet", (bullet) => {
+      play("explosion", { volume: 0.3 });
       destroy(enemy);
       destroy(bullet);
     });
