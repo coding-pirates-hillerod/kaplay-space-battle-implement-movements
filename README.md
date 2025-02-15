@@ -88,3 +88,4 @@ Og ja, trykker man herfra på <code>space</code> tasten på sit keyboard, så be
 
 Og når ens 'spaceship' afslutningsvist rammes af en af der grusomme "Alien 'beanies'", så er spillet så at sige slut, og man vil således se dette sidste skærmbillede (hvorfra man dog kan trykke på ens <code>space</code> tast for igen at spille spillet, som vist på forrige skærmbillede):
 
+<img width="1211" alt="Screenshot 2025-02-15 at 14 56 42" src="https://github.com/user-attachments/assets/c559e9be-3f18-463a-a184-a3968c7cb975" />
