@@ -1,11 +1,25 @@
 import kaplay from "kaplay";
-// import "kaplay/global"; // uncomment if you want to use without the k. prefix
+import "kaplay/global";
 
-const k = kaplay();
+import { mainMenuScene } from "./scenes/mainMenuScene";
+import { gameScene } from "./scenes/gameScene";
+import { gameOverScene } from "./scenes/gameOverScene";
 
-k.loadRoot("./"); // A good idea for Itch.io publishing later
-k.loadSprite("bean", "sprites/bean.png");
+kaplay({
+  debug: true,
+  debugKey: "d",
+});
 
-k.add([k.pos(120, 80), k.sprite("bean")]);
+loadSprite("spacebg", "graphics/spacebg.png");
+loadSprite("spaceship", "sprites/spaceship.png");
+loadSprite("bullet", "sprites/bullet.png");
+loadSprite("bean", "sprites/bean.png");
 
-k.onClick(() => k.addKaboom(k.mousePos()));
+loadSound("laser", "sounds/laser.wav");
+loadSound("explosion", "sounds/explosion.wav");
+
+scene("main-menu", mainMenuScene);
+scene("game", gameScene);
+scene("gameover", gameOverScene);
+
+go("main-menu");
