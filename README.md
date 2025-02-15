@@ -79,3 +79,6 @@ npm run dev
 ```
 
 Følger man således linket, så åbnes ens browser, og man skulle gerne se dette billede:
+
+<img width="1324" alt="Screenshot 2025-02-15 at 14 32 13" src="https://github.com/user-attachments/assets/23e7c130-e1d5-487f-bb5c-877b614cfcd2" />
+
