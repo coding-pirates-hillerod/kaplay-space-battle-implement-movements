@@ -4,15 +4,11 @@ export const gameScene = () => {
   const spaceship = add([sprite("spaceship"), pos(10, center().y), area()]);
 
   spaceship.onKeyDown("up", () => {
-    if (spaceship.pos.y >= 0) {
-      spaceship.move(0, -200);
-    }
+    // SKRIV DIN KODE HERUNDER 
   });
 
   spaceship.onKeyDown("down", () => {
-    if (spaceship.pos.y <= height() - spaceship.height) {
-      spaceship.move(0, 200);
-    }
+    // SKRIV DIN KODE HERUNDER
   });
 
   spaceship.onKeyPress("space", () => {
@@ -30,7 +26,7 @@ export const gameScene = () => {
     ]);
 
     bullet.onUpdate(() => {
-      bullet.move(300, 0);
+      // SKRIV DIN KODE HERUNDER
     });
 
     bullet.onExitScreen(() => {
