@@ -1,6 +1,8 @@
 import kaplay from "kaplay";
 import "kaplay/global";
 
+import { mainMenuScene } from "./scenes/mainMenuScene";
+
 kaplay({
   debug: true,
   debugKey: "d",
@@ -91,4 +93,6 @@ scene("game", () => {
   spawnEnemies();
 });
 
-go("game");
+scene("main-menu", mainMenuScene);
+
+go("main-menu");
