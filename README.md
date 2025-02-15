@@ -1,27 +1,11 @@
-# Folder structure
+# kaplay-space-battle-implement-movements
 
-- `src` - source code for your kaplay project
-- `dist` - distribution folder, contains your index.html, built js bundle and static assets
+Et repo hvor børn selv skal implementere koden til at bevæge et 'spaceship' og dets 'bullets' i jagten på at nedskyde nogle "Alien 'Beanies'" i et "Space Battle" spil lavet med KAPLAY, hvor al anden kode er implementeret.
 
+## Nødvendigt software
 
-## Development
+For selv at kunne implementere koden til dette spil, er det nødvendigt at man har Node.js installeret.
 
-```sh
-$ npm run dev
-```
+Node.js er dog heldigvis ret simpelt at installere, hvorfor man blot skal følge dette link for at installere det:
 
-will start a dev server at http://localhost:8000
-
-## Distribution
-
-```sh
-$ npm run build
-```
-
-will build your js files into `dist/`
-
-```sh
-$ npm run zip
-```
-
-will build your game and package into a .zip file, you can upload to your server or itch.io / newground etc.
+- [Node.js](https://nodejs.org/en)
