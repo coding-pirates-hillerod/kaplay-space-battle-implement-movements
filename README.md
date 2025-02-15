@@ -82,3 +82,5 @@ Følger man således linket, så åbnes ens browser, og man skulle gerne se dett
 
 <img width="1324" alt="Screenshot 2025-02-15 at 14 32 13" src="https://github.com/user-attachments/assets/23e7c130-e1d5-487f-bb5c-877b614cfcd2" />
 
+Og ja, trykker man herfra på <code>space</code> tasten på sit keyboard, så begynder spillet, hvor man vil se et 'spaceship' ude i venstre side af skærmen, der dog hverken kan bevæge sig op og ned, og ej heller rigtig skyde nogle 'bullets' i retning mod de "Alien 'beanies'", som vilkårligt kommer flyvende ind fra skærmens højre side:
+
