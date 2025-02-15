@@ -38,3 +38,44 @@ Har du ikke har 'git' installeret, så kan du hente dette repos kode ved at down
 <img width="497" alt="Screenshot 2025-02-07 at 13 25 06" src="https://github.com/user-attachments/assets/66009d86-35b1-4ced-ace4-5d2be6d67934" />
 
 Pak derefter den downloade zip fil ud, og åbn repoet i den IDE du bruger.
+
+## Om dette repo
+
+I dette repo vil du kunne finde følgende 2 mapper:
+
+1. finished-code
+2. starter-code
+
+### Mappen 'finished-code'
+
+Mappen kaldet 'finished-code' indeholder den komplet færdige kode, hvor koden til bevægelse af spillets 'spaceship' og dets 'bullets' er lavet.
+
+**MEN** hvis du vitterligt gerne vil lære at kode, så brug kun denne mappe som en hjælp, hvis nu du går i stå e.lign. For du lærer nemlig ikke noget af bare at kopiere koden fra denne mappe, vel!?
+
+### Mappen 'starter-code'
+
+Mappen kaldet 'starter-code' er den mappe, hvor du selv skal implementere koden til at bevæge spillets 'spaceship' og 'bullets', således at du herefter har dit eget komplet fungerende spil(!).
+
+## Inden du går i gang
+
+Inden du går i gang med denne opgave, så skal du først lige have installeret de pakker, som spillet afhænger af.
+
+Gå derfor først ned i <code>starter-code</code> mappen vhja. denne kommando fra din terminal/kommandolinje:
+
+```bash
+cd starter-code
+```
+
+Når det er gjort, så skal man dernæst installere de pakker, som spillets kode afhænger af. Kør derfor denne kommando fra terminalen/kommandolinjen for at installere dem:
+
+```bash
+npm i
+```
+
+Så snart pakkerne er installeret kan man så bare køre denne sidste kommando, hvorefter ens spil vil kunne ses i ens browser, når man følger det link som vises i terminalen (linket plejer at være <code>http://localhost:3001/</code>):
+
+```bash
+npm run dev
+```
+
+Følger man således linket, så åbnes ens browser, og man skulle gerne se dette billede:
