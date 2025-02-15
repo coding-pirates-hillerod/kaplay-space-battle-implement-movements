@@ -7,8 +7,8 @@ kaplay({
 });
 
 loadSprite("spacebg", "graphics/spacebg.png");
-loadSprite("spaceship", "graphics/spaceship.png");
-loadSprite("bullet", "graphics/bullet.png");
+loadSprite("spaceship", "sprites/spaceship.png");
+loadSprite("bullet", "sprites/bullet.png");
 loadSprite("bean", "sprites/bean.png");
 
 loadSound("laser", "sounds/laser.wav");
