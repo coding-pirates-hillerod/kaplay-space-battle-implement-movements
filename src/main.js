@@ -18,13 +18,13 @@ scene("game", () => {
 
   spaceship.onKeyDown("up", () => {
     if (spaceship.pos.y >= 0) {
-      spaceship.moveTo(spaceship.pos.x, spaceship.pos.y - 10);
+      spaceship.move(0, -200);
     }
   });
 
   spaceship.onKeyDown("down", () => {
     if (spaceship.pos.y <= height() - spaceship.height) {
-      spaceship.moveTo(spaceship.pos.x, spaceship.pos.y + 10);
+      spaceship.move(0, 200);
     }
   });
 
