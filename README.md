@@ -1,6 +1,6 @@
 # kaplay-space-battle-implement-movements
 
-Et repo hvor børn selv skal implementere koden til at bevæge et 'spaceship' og dets 'bullets' i jagten på at nedskyde nogle "Alien 'Beanies'" i et "Space Battle" spil lavet med KAPLAY, hvor al anden kode er implementeret.
+Et repo hvor børn selv skal implementere koden til at bevæge et 'spaceship' og dets 'bullets' i jagten på at nedskyde nogle "Alien 'Beanies'" i et "Space Battle" spil lavet med [KAPLAY](https://kaplayjs.com/), hvor al anden kode er implementeret.
 
 ## Nødvendigt software
 
